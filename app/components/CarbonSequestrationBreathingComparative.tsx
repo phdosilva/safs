@@ -1,8 +1,8 @@
 "use client";
 
 import Lottie from "lottie-react";
-import breatingComparativeAnimation from "./carbonSequestrationBreathingComparativeLottieData.json";
+import breathingComparativeAnimation from "./carbonSequestrationBreathingComparativeLottieData.json";
 
-const CarbonSequestrationBreathingComparative = () => <Lottie animationData={breatingComparativeAnimation} loop={true}/>;
+const CarbonSequestrationBreathingComparative = () => <Lottie animationData={breathingComparativeAnimation} loop={true}/>;
 
 export default CarbonSequestrationBreathingComparative;
