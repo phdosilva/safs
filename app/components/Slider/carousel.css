@@ -1,0 +1,27 @@
+/* Fix problem: its not possible take the text in carousel, user needs select the text */
+.slick-slider {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.slick-list.draggable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slick-slider .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-slider .slick-slide:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

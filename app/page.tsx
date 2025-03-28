@@ -3,7 +3,15 @@ import bannerImg from "../public/banner.png";
 import backgroundImg from "../public/background.png";
 import scrollSVG from "../public/scroll.svg";
 import ellipseSVG from "../public/ellipse.svg";
+import { Slider } from "./components/Slider";
 
+import img1 from "../public/img1.png";
+import img2 from "../public/img2.png";
+import img3 from "../public/img3.png";
+import img4 from "../public/img4.png";
+import img5 from "../public/img5.png";
+import img6 from "../public/img6.png";
+import img7 from "../public/img7.png";
 export default function Home() {
   return (
     <>
@@ -324,6 +332,54 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="mt-20">
+          <div>
+          <Slider.Wrapper backgroundColor="#EBEBFE" backgroundImage={true}>
+        <Slider.Carousel bulletColor="white" bulletActiveColor="gray" variant="blue">
+        <div>
+            <div className="w-full flex justify-center">
+              <Image src={img1} alt="" className="max-w-[1050px]" />
+            </div>
+          </div>
+          <div>
+            <div className="w-full flex justify-center">
+              <Image src={img2} alt="" className="max-w-[1050px]" />
+            </div>
+          </div>
+          <div>
+            <div className="w-full flex justify-center">
+            <Image src={img3} alt="" className="max-w-[1050px]" />
+            </div>
+          </div>
+
+          <div>
+            <div className="w-full flex justify-center">
+            <Image src={img4} alt="" className="max-w-[1050px]" />
+            </div>
+          </div>
+
+          <div>
+            <div className="w-full flex justify-center">
+            <Image src={img5} alt="" className="max-w-[1050px]" />
+            </div>
+          </div>
+
+          <div>
+            <div className="w-full flex justify-center">
+            <Image src={img6} alt="" className="max-w-[1050px]" />
+            </div>
+          </div>
+
+          <div>
+            <div className="w-full flex justify-center">
+            <Image src={img7} alt="" className="max-w-[1050px]" />
+            </div>
+          </div>
+        </Slider.Carousel>
+      </Slider.Wrapper>
           </div>
         </section>
       </main>
