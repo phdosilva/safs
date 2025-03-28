@@ -33,14 +33,17 @@ export default function Home() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10">
-          <Image src={scrollSVG} alt="Scroll Indicator"></Image>
-          <Image
-            className="absolute top-2.5 left-1.5 inset-0 animate-bounce"
-            src={ellipseSVG}
-            alt="Scroll Animated"
-            objectFit="contain"
-          />
+        <div className="absolute bottom-20 flex flex-col items-center">
+          <div className="relative">
+            <Image src={scrollSVG} alt="Scroll Indicator"></Image>
+            <Image
+              className="absolute top-2.5 left-1.5 inset-0 animate-bounce"
+              src={ellipseSVG}
+              alt="Scroll Animated"
+              objectFit="contain"
+            />
+          </div>
+          <p className="text-white text-sm mt-2">Arraste para navegar</p>
         </div>
       </section>
 
