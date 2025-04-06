@@ -1,6 +1,5 @@
 import Image from "next/image";
 import bannerImg from "../public/banner.png";
-import backgroundImg from "../public/background.png";
 import scrollSVG from "../public/scroll.svg";
 import ellipseSVG from "../public/ellipse.svg";
 
@@ -47,11 +46,10 @@ export default function Home() {
         </div>
       </section>
 
-      <main className="relative">
+      <main>
         {/* Primeira Seção */}
         <section className="w-full min-h-screen flex flex-col text-white">
-          <div className="max-w-4xl mx-auto flex flex-col min-h-screen space-y-8 mx-16 bg-black/60">
-            <p></p>
+          <div className="max-w-4xl mx-auto flex flex-col min-h-screen space-y-8" style={{ padding: "2rem 2rem" }}>
             <p>
               Por anos, um bioma representado na grande mídia pela morte e pela seca: a caatinga, que é o único bioma exclusivamente brasileiro, na verdade exala mais vida do que se pode ver a olho nu. As variações de solo se transformam em diferentes tipos de paisagens, como serras, chapadas e afloramento de rochas chamados de ‘‘lajedos’’.
             </p>
@@ -65,7 +63,6 @@ export default function Home() {
               muted
             >
               <source src="/agroflorestas.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeo HTML5.
             </video>
 
             <div className="flex flex-col md:flex-row gap-8">
@@ -80,6 +77,7 @@ export default function Home() {
                   O excesso de CO² na atmosfera é a principal causa do efeito estufa, relacionado ao aquecimento global. Na caatinga, para cada 100 toneladas de CO² capturadas, entre 45% e 60% permanecem retidas e não retornam à atmosfera. 
                 </p>
               </div>
+              
               <div className="flex-1 aspect-square bg-gray-300 rounded-lg" />
             </div>
           
