@@ -2,6 +2,7 @@ import Image from "next/image";
 import bannerImg from "../public/banner.png";
 import scrollSVG from "../public/scroll.svg";
 import ellipseSVG from "../public/ellipse.svg";
+import PernambucoLoading from "./components/pernambucoLoading";
 
 export default function Home() {
   return (
@@ -66,23 +67,25 @@ export default function Home() {
             </video>
 
             <div className="flex flex-col md:flex-row gap-8">
-              <div className="flex-1 aspect-square space-y-8">
+              <div className="flex-1 space-y-8">
                 <p>
                   A caatinga cobre 83% do território de Pernambuco, dominando o sertão e parte do agreste, o que dá cerca de 135 municípios. O bioma se estende por outros oito estados do Nordeste e parte do Sudeste, abrangendo Alagoas, Bahia, Ceará, Maranhão, Paraíba, Piauí, Rio Grande do Norte, Sergipe e uma pequena porção de Minas Gerais.
                 </p>
-                <p>
-                  E esse ecossistema ganha ainda mais importância devido ao seu potencial no sequestro de carbono. Mais de uma década de estudos do Observatório Nacional da Caatinga apontaram que esse é o bioma brasileiro que mais se destaca pelo alto desempenho no sequestro de carbono (CO²).
-                </p>
-                <p>
-                  O excesso de CO² na atmosfera é a principal causa do efeito estufa, relacionado ao aquecimento global. Na caatinga, para cada 100 toneladas de CO² capturadas, entre 45% e 60% permanecem retidas e não retornam à atmosfera. 
-                </p>
               </div>
-              
-              <div className="flex-1 aspect-square bg-gray-300 rounded-lg" />
+
+              <div className="flex-1 rounded-lg">
+                <PernambucoLoading />
+              </div>
             </div>
-          
+
             <p>
-              Mas a caatinga não está livre da degradação, assim como outros biomas do Brasil. De acordo com o Ibama, o país já perdeu 34 milhões dos 82,6 milhões de hectares do bioma. Ao todo, cerca de 27 milhões de pessoas vivem na região e o avanço da degradação ameaça não só a biodiversidade, mas as famílias que tiram da terra seu sustento, o que torna urgente a busca por soluções sustentáveis. 
+              E esse ecossistema ganha ainda mais importância devido ao seu potencial no sequestro de carbono. Mais de uma década de estudos do Observatório Nacional da Caatinga apontaram que esse é o bioma brasileiro que mais se destaca pelo alto desempenho no sequestro de carbono (CO²).
+            </p>
+            <p>
+              O excesso de CO² na atmosfera é a principal causa do efeito estufa, relacionado ao aquecimento global. Na caatinga, para cada 100 toneladas de CO² capturadas, entre 45% e 60% permanecem retidas e não retornam à atmosfera.
+            </p>
+            <p>
+              Mas a caatinga não está livre da degradação, assim como outros biomas do Brasil. De acordo com o Ibama, o país já perdeu 34 milhões dos 82,6 milhões de hectares do bioma. Ao todo, cerca de 27 milhões de pessoas vivem na região e o avanço da degradação ameaça não só a biodiversidade, mas as famílias que tiram da terra seu sustento, o que torna urgente a busca por soluções sustentáveis.
             </p>
           </div>
         </section>
