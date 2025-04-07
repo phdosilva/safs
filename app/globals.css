@@ -45,7 +45,3 @@ body {
   font-family: var(--font-poppins);
   font-weight: 500;
 }
-
-.relative {
-  margin: 0 16px;
-}

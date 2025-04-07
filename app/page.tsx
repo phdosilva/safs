@@ -7,9 +7,9 @@ import PernambucoLoading from "./components/pernambucoLoading";
 export default function Home() {
   return (
     <>
-      <section className="relative w-full h-screen flex flex-col justify-center items-center text-center overflow-hidden">
+      <section className="w-full max-w-screen h-screen flex flex-col justify-center items-center text-center overflow-hidden">
         {/* Background Image */}
-        <div className="absolute top-0 left-0 w-full h-full -z-10">
+        <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
           <Image
             src={bannerImg}
             alt="Desertos na Caatinga"
@@ -18,7 +18,7 @@ export default function Home() {
             objectPosition="center"
           />
           {/* Overlay */}
-          <div className="absolute top-0 left-0 w-full h-full bg-black/70" />
+          <div className="absolute top-0 left-0 w-full h-full bg-black/40" />
         </div>
 
         {/* Text Content */}
@@ -45,6 +45,9 @@ export default function Home() {
           </div>
           <p className="text-white text-sm mt-2">Arraste para navegar</p>
         </div>
+
+        {/* Gradient Fade at Bottom */}
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#271800] pointer-events-none" />
       </section>
 
       <main className="">
