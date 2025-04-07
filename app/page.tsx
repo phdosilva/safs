@@ -51,7 +51,7 @@ export default function Home() {
         {/* Primeira Seção */}
         <section className="w-full min-h-screen flex flex-col text-white bg-[#271800]">
           <div className="max-w-5xl mx-auto flex flex-col min-h-screen space-y-8" style={{ padding: "2rem 2rem" }}>
-            <div className="md:px-10 space-y-8">
+            <div className="md:px-10 space-y-8 poppins-regular">
               <p>
                 Por anos, um bioma representado na grande mídia pela morte e pela seca: a caatinga, que é o único bioma exclusivamente brasileiro, na verdade exala mais vida do que se pode ver a olho nu. As variações de solo se transformam em diferentes tipos de paisagens, como serras, chapadas e afloramento de rochas chamados de ‘‘lajedos’’.
               </p>
@@ -73,7 +73,7 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row overflow-hidden">
               <div className="w-full md:w-1/2 flex items-center">
-                <p className="bg-[#4A3D29] py-12 pl-8 pr-2 w-full flex items-center rounded-tl-xl md:rounded-bl-xl rounded-tr-xl md:rounded-tr-none md:rounded-br-none">
+                <p className="bg-[#4A3D29] py-12 pl-8 pr-2 w-full flex items-center rounded-tl-xl md:rounded-bl-xl rounded-tr-xl md:rounded-tr-none md:rounded-br-none poppins-medium">
                   A caatinga cobre 83% do território de Pernambuco, dominando o sertão e parte do agreste, o que dá cerca de 135 municípios. O bioma se estende por outros oito estados do Nordeste e parte do Sudeste, abrangendo Alagoas, Bahia, Ceará, Maranhão, Paraíba, Piauí, Rio Grande do Norte, Sergipe e uma pequena porção de Minas Gerais.
                 </p>
               </div>
@@ -83,7 +83,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="md:px-10 space-y-8">
+            <div className="md:px-10 space-y-8 poppins-regular">
               <p>
                 E esse ecossistema ganha ainda mais importância devido ao seu potencial no sequestro de carbono. Mais de uma década de estudos do Observatório Nacional da Caatinga apontaram que esse é o bioma brasileiro que mais se destaca pelo alto desempenho no sequestro de carbono (CO²).
               </p>
