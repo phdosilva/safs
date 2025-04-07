@@ -47,9 +47,9 @@ export default function Home() {
         </div>
       </section>
 
-      <main>
+      <main className="relative">
         {/* Primeira Seção */}
-        <section className="w-full min-h-screen flex flex-col text-white">
+        <section className="w-full min-h-screen flex flex-col text-white bg-black">
           <div className="max-w-4xl mx-auto flex flex-col min-h-screen space-y-8" style={{ padding: "2rem 2rem" }}>
             <p>
               Por anos, um bioma representado na grande mídia pela morte e pela seca: a caatinga, que é o único bioma exclusivamente brasileiro, na verdade exala mais vida do que se pode ver a olho nu. As variações de solo se transformam em diferentes tipos de paisagens, como serras, chapadas e afloramento de rochas chamados de ‘‘lajedos’’.
