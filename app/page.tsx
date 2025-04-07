@@ -47,9 +47,9 @@ export default function Home() {
         </div>
       </section>
 
-      <main className="relative">
+      <main className="">
         {/* Primeira Seção */}
-        <section className="w-full min-h-screen flex flex-col text-white bg-black">
+        <section className="w-full min-h-screen flex flex-col text-white bg-[#271800]">
           <div className="max-w-4xl mx-auto flex flex-col min-h-screen space-y-8" style={{ padding: "2rem 2rem" }}>
             <p>
               Por anos, um bioma representado na grande mídia pela morte e pela seca: a caatinga, que é o único bioma exclusivamente brasileiro, na verdade exala mais vida do que se pode ver a olho nu. As variações de solo se transformam em diferentes tipos de paisagens, como serras, chapadas e afloramento de rochas chamados de ‘‘lajedos’’.
@@ -59,21 +59,21 @@ export default function Home() {
             </p>
 
             <video
-              className="rounded-lg object-cover"
+              className="rounded-xl object-cover"
               controls
               muted
             >
               <source src="/agroflorestas.mp4" type="video/mp4" />
             </video>
 
-            <div className="flex flex-col md:flex-row gap-8">
-              <div className="flex-1 space-y-8">
-                <p>
+            <div className="flex flex-col md:flex-row overflow-hidden">
+              <div className="w-full md:w-1/2 flex items-center">
+                <p className="bg-[#4A3D29] py-8 pl-8 pr-2 w-full flex items-center rounded-tl-xl md:rounded-bl-xl rounded-tr-xl md:rounded-tr-none md:rounded-br-none">
                   A caatinga cobre 83% do território de Pernambuco, dominando o sertão e parte do agreste, o que dá cerca de 135 municípios. O bioma se estende por outros oito estados do Nordeste e parte do Sudeste, abrangendo Alagoas, Bahia, Ceará, Maranhão, Paraíba, Piauí, Rio Grande do Norte, Sergipe e uma pequena porção de Minas Gerais.
                 </p>
               </div>
 
-              <div className="flex-1 rounded-lg">
+              <div className="bg-black w-full md:w-1/2 flex flex-col items-center justify-center md:rounded-xl rounded-bl-xl rounded-br-xl aspect-[1/0.8]">
                 <PernambucoLoading />
               </div>
             </div>
