@@ -1,5 +1,8 @@
 import Image from "next/image";
 import bannerImg from "../public/banner.png";
+import videoTemporary from "../public/videoTemporary.png";
+import brownCactus from "../public/brownCactus.svg";
+import quotes from "../public/quotes.svg";
 import scrollSVG from "../public/scroll.svg";
 import ellipseSVG from "../public/ellipse.svg";
 import PernambucoLoading from "./components/pernambucoLoading";
@@ -10,13 +13,7 @@ export default function Home() {
       <section className="w-full max-w-screen h-screen flex flex-col justify-center items-center text-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
-          <Image
-            src={bannerImg}
-            alt="Desertos na Caatinga"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-          />
+          <Image src={bannerImg} alt="Desertos na Caatinga" layout="fill" objectFit="cover" objectPosition="center" />
           {/* Overlay */}
           <div className="absolute top-0 left-0 w-full h-full bg-black/40" />
         </div>
@@ -56,28 +53,31 @@ export default function Home() {
           <div className="max-w-5xl mx-auto flex flex-col min-h-screen space-y-8" style={{ padding: "2rem 2rem" }}>
             <div className="md:px-10 space-y-8 poppins-regular">
               <p>
-                Por anos, um bioma representado na grande mídia pela morte e pela seca: a caatinga, que é o único bioma exclusivamente brasileiro, na verdade exala mais vida do que se pode ver a olho nu. As variações de solo se transformam em diferentes tipos de paisagens, como serras, chapadas e afloramento de rochas chamados de ‘‘lajedos’’.
+                Por anos, um bioma representado na grande mídia pela morte e pela seca: a caatinga, que é o único bioma
+                exclusivamente brasileiro, na verdade exala mais vida do que se pode ver a olho nu. As variações de solo
+                se transformam em diferentes tipos de paisagens, como serras, chapadas e afloramento de rochas chamados
+                de ‘‘lajedos’’.
               </p>
               <p>
-                Essa variedade se estende para a fauna e a flora, com cerca de 1.794 espécies de animais vertebrados e invertebrados, e mais de 3 mil espécies de plantas vasculares. Com um clima quente e seco, onde longos períodos de estiagem são a regra, essa paisagem abriga milhões de pessoas que dependem dela para viver.
+                Essa variedade se estende para a fauna e a flora, com cerca de 1.794 espécies de animais vertebrados e
+                invertebrados, e mais de 3 mil espécies de plantas vasculares. Com um clima quente e seco, onde longos
+                períodos de estiagem são a regra, essa paisagem abriga milhões de pessoas que dependem dela para viver.
               </p>
             </div>
-            
+
             <div className="md:px-10">
-              <video
-                className="rounded-xl object-cover"
-                controls
-                muted
-              >
+              <video className="rounded-xl object-cover" controls muted>
                 <source src="/agroflorestas.mp4" type="video/mp4" />
               </video>
             </div>
-            
 
             <div className="flex flex-col md:flex-row overflow-hidden">
               <div className="w-full md:w-1/2 flex items-center">
                 <p className="bg-[#4A3D29] py-12 pl-8 pr-2 w-full flex items-center rounded-tl-xl md:rounded-bl-xl rounded-tr-xl md:rounded-tr-none md:rounded-br-none poppins-medium">
-                  A caatinga cobre 83% do território de Pernambuco, dominando o sertão e parte do agreste, o que dá cerca de 135 municípios. O bioma se estende por outros oito estados do Nordeste e parte do Sudeste, abrangendo Alagoas, Bahia, Ceará, Maranhão, Paraíba, Piauí, Rio Grande do Norte, Sergipe e uma pequena porção de Minas Gerais.
+                  A caatinga cobre 83% do território de Pernambuco, dominando o sertão e parte do agreste, o que dá
+                  cerca de 135 municípios. O bioma se estende por outros oito estados do Nordeste e parte do Sudeste,
+                  abrangendo Alagoas, Bahia, Ceará, Maranhão, Paraíba, Piauí, Rio Grande do Norte, Sergipe e uma pequena
+                  porção de Minas Gerais.
                 </p>
               </div>
 
@@ -88,13 +88,94 @@ export default function Home() {
 
             <div className="md:px-10 space-y-8 poppins-regular">
               <p>
-                E esse ecossistema ganha ainda mais importância devido ao seu potencial no sequestro de carbono. Mais de uma década de estudos do Observatório Nacional da Caatinga apontaram que esse é o bioma brasileiro que mais se destaca pelo alto desempenho no sequestro de carbono (CO²).
+                E esse ecossistema ganha ainda mais importância devido ao seu potencial no sequestro de carbono. Mais de
+                uma década de estudos do Observatório Nacional da Caatinga apontaram que esse é o bioma brasileiro que
+                mais se destaca pelo alto desempenho no sequestro de carbono (CO²).
               </p>
               <p>
-                O excesso de CO² na atmosfera é a principal causa do efeito estufa, relacionado ao aquecimento global. Na caatinga, para cada 100 toneladas de CO² capturadas, entre 45% e 60% permanecem retidas e não retornam à atmosfera.
+                O excesso de CO² na atmosfera é a principal causa do efeito estufa, relacionado ao aquecimento global.
+                Na caatinga, para cada 100 toneladas de CO² capturadas, entre 45% e 60% permanecem retidas e não
+                retornam à atmosfera.
               </p>
               <p>
-                Mas a caatinga não está livre da degradação, assim como outros biomas do Brasil. De acordo com o Ibama, o país já perdeu 34 milhões dos 82,6 milhões de hectares do bioma. Ao todo, cerca de 27 milhões de pessoas vivem na região e o avanço da degradação ameaça não só a biodiversidade, mas as famílias que tiram da terra seu sustento, o que torna urgente a busca por soluções sustentáveis.
+                Mas a caatinga não está livre da degradação, assim como outros biomas do Brasil. De acordo com o Ibama,
+                o país já perdeu 34 milhões dos 82,6 milhões de hectares do bioma. Ao todo, cerca de 27 milhões de
+                pessoas vivem na região e o avanço da degradação ameaça não só a biodiversidade, mas as famílias que
+                tiram da terra seu sustento, o que torna urgente a busca por soluções sustentáveis.
+              </p>
+            </div>
+          </div>
+        </section>
+        {/* Aqui é o banner */}
+        <div className="flex w-full ">
+          <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#FFFFFF] bg-[#271800] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
+            Como os Sistemas Agroflorestais podem salvar a caatinga?
+          </h2>
+          <Image
+            className="max-w-[182px] max-md:max-w-[120px] lg:ml-20 mt-10 md:mb-[-25px] max-md:mb-[-70px]"
+            src={brownCactus}
+            alt="Cacto"
+          ></Image>
+        </div>
+
+        {/* Terceira Seção */}
+        <section className="bg-[#271800] text-white">
+          <div
+            className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#271800]"
+            style={{ padding: "2rem 2rem" }}
+          >
+            <Image src={videoTemporary} alt="video" className="pt-20"></Image>
+            <div className="mt-10 md:px-7 space-y-8 poppins-regular text-white text-justify">
+              <p>
+                Imagine uma paisagem no sertão, onde, em vez de solo seco e empobrecido, há um sistema diverso de
+                plantas crescendo juntas. Enquanto árvores como angico, juazeiro e umbuzeiro oferecem sombra e ajudam a
+                manter a umidade, plantações de feijão, milho e abóbora protegem a terra contra a erosão, e pés de caju
+                e macaúba garantem frutos. Esse cenário pode parecer distante da realidade de muitas regiões semiáridas,
+                mas é, na verdade, uma alternativa que tem ganhado força na Caatinga, onde as agroflorestas têm se
+                mostrado uma solução eficaz para combater a desertificação e promover a recuperação do bioma.
+              </p>
+              <p>
+                Os Sistemas Agroflorestais (SAFs) são um ciclo produtivo milenar que combina árvores e arbustos com
+                culturas agrícolas ou forrageiras (plantas cultivadas para alimentar animais herbívoros). Eles têm como
+                objetivo proteger a biodiversidade, recuperar áreas degradadas e proporcionar segurança alimentar aos
+                agricultores, com base no princípio da economia sustentável, que vai além da lógica monetária.
+                <br />A implementação de SAFs começa com a observação detalhada da área a ser revitalizada. Avaliar o
+                potencial da terra, o clima e a capacidade do solo é essencial, assim como a definição da demanda: será
+                voltada para a alimentação animal ou para o cultivo familiar? A escolha das espécies adequadas é
+                fundamental, assim como a identificação de quais delas podem coexistir de forma harmônica.
+              </p>
+              <div className="flex gap-10 items-start max-md:flex-col">
+                <p className="md:w-[70%]">
+                  Os SAFs funcionam através de sucessão ecológica. De acordo com Rivaneide Almeida, engenheira agrônoma
+                  e coordenadora territorial do Centro de Desenvolvimento Agroecológico Sabiá no Sertão do Pajeú, os
+                  Sistemas Agroflorestais obedecem aos princípios da natureza. Essa abordagem está alinhada com os
+                  princípios da agroecologia, que busca formas de produção agrícola sustentáveis.
+                </p>
+
+                <div className="bg-[#4A3D29] p-10 rounded-[30px] md:w-[90%] relative ml-8">
+                  <Image src={quotes} alt="aspas" className="absolute top-6 left-[-30px] w-16 h-16" />
+                  <p className="text-[25px] roboto-regular pl-4">
+                    Na agrofloresta, tem que haver uma sucessão de espécies. Tem de haver primeiramente os musgos, as
+                    pioneiras, as colonizadoras, para preparar o ambiente
+                  </p>
+                  <br />
+                  <p className="pl-4">Rivaneide Almeida</p>
+                </div>
+              </div>
+              <p>
+                e integradas ao meio ambiente. Ao combinar uma vegetação diversificada, os SAFs criam ecossistemas
+                equilibrados que favorecem a regeneração da terra e a manutenção da diversidade ecológica.
+                <br />A interação entre as espécies melhora a capacidade do solo de reter água. “O solo se torna como
+                uma esponja, absorvendo melhor a água e os nutrientes necessários para sobreviver. Onde não há mata, não
+                há água”, afirma a engenheira agrônoma. 
+              </p>
+              <p>
+                Segundo Rivaneide, os SAFs podem ser implementados mesmo em áreas pequenas, de pelo menos 20 metros
+                quadrados. No entanto, muitos agricultores ainda hesitam em adotar essa prática, seja pela falta de
+                assistência técnica que ofereça o suporte necessário para garantir a segurança alimentar, seja pela
+                incerteza em relação à posse da terra. “Eles têm medo. Se cultivarem em terras de outras pessoas, podem
+                ser surpreendidos caso o proprietário decida mudar o uso do terreno, como, por exemplo, para pastagem.
+                Todo o trabalho pode ser perdido”, explica.
               </p>
             </div>
           </div>
