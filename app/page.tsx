@@ -13,6 +13,45 @@ import trator from "../public/trator.png";
 import mineracao from "../public/mineracao.png";
 
 import PernambucoLoading from "./components/pernambucoLoading";
+import ImageCarousel from "./components/carousel";
+
+const slides = [
+  {
+    id: 1,
+    imageUrl: "/placeholder.svg?height=600&width=1200",
+    title: "Atualização do Índice de Aridez",
+    description:
+      "Mede a relação entre a chuva e a evaporação, permitindo mapear áreas mais suscetíveis à desertificação. A nova versão revelou o avanço da aridez na Caatinga e até a formação de zonas áridas fora do semiárido",
+  },
+  {
+    id: 2,
+    imageUrl: "/placeholder.svg?height=600&width=1200",
+    title: "Monitoramento de Secas",
+    description:
+      "Sistemas avançados de monitoramento permitem acompanhar e prever períodos de seca, ajudando comunidades a se prepararem para condições adversas",
+  },
+  {
+    id: 3,
+    imageUrl: "/placeholder.svg?height=600&width=1200",
+    title: "Recuperação de Áreas Degradadas",
+    description:
+      "Projetos de reflorestamento e técnicas sustentáveis ajudam a recuperar regiões afetadas pela desertificação e erosão do solo",
+  },
+  {
+    id: 4,
+    imageUrl: "/placeholder.svg?height=600&width=1200",
+    title: "Gestão Hídrica Sustentável",
+    description:
+      "Estratégias para o uso eficiente da água em regiões áridas, incluindo captação de água da chuva e reuso de águas residuais",
+  },
+  {
+    id: 5,
+    imageUrl: "/placeholder.svg?height=600&width=1200",
+    title: "Impactos das Mudanças Climáticas",
+    description:
+      "Estudos sobre como o aquecimento global intensifica os processos de desertificação e afeta ecossistemas vulneráveis",
+  },
+];
 
 export default function Home() {
   return (
@@ -639,7 +678,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
+
+              <div className="min-h-screen bg-gradient-to-b text-white py-12">
+                <div className="container mx-auto px-4">
+                  <ImageCarousel slides={slides} />
+                </div>
+              </div>
             </div>
           </div>
 
@@ -652,6 +696,8 @@ export default function Home() {
         </section>
 
         {/* Sexta Seção */}
+
+
       </main>
     </>
   );
