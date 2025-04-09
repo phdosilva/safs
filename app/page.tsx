@@ -571,73 +571,75 @@ export default function Home() {
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-5 bg-[#271800]"
             style={{ padding: "2rem 2rem" }}
           >
-            <Image src={videoTemporary} alt="video" className="pt-20"></Image>
-            <div className="mt-10 md:px-7 space-y-5 poppins-regular text-white text-justify">
-              <p>
-                Criado em janeiro de 2023, o Departamento de Combate à
-                Desertificação (DCDE) faz parte do Ministério do Meio Ambiente e
-                tem a missão de coordenar a implementação da Política Nacional
-                de Combate à Desertificação e Mitigação dos Efeitos (PNCD),
-                instituída pela Lei 13.153/2015. Além disso, é responsável por
-                subsidiar e monitorar a implementação da Convenção das Nações
-                Unidas para o Combate à Desertificação (UNCCD).
-              </p>
-              <p>
-                Segundo o Instituto Brasileiro de Geografia e Estatística
-                (IBGE), o semiárido brasileiro, onde predomina a Caatinga,
-                possui cerca de 1,7 milhão de estabelecimentos da agricultura
-                familiar, que dependem da preservação do bioma para gerar
-                alimentos e renda. Segundo Alexandre, o Departamento de Combate
-                à Desertificação tem adotado ações para frear a degradação no
-                semiárido.
-              </p>
-              <div className="flex gap-10 items-start max-md:flex-col">
-                <p className="md:w-[70%]">
-                  Os SAFs funcionam através de sucessão ecológica. De acordo com
-                  Rivaneide Almeida, engenheira agrônoma e coordenadora
-                  territorial do Centro de Desenvolvimento Agroecológico Sabiá
-                  no Sertão do Pajeú, os Sistemas Agroflorestais obedecem aos
-                  princípios da natureza. Essa abordagem está alinhada com os
-                  princípios da agroecologia, que busca formas de produção
-                  agrícola sustentáveis. e integradas ao meio ambiente. Ao
-                  combinar uma vegetação diversificada, os SAFs criam
-                  ecossistemas equilibrados que favorecem a regeneração da terra
-                  e a manutenção da diversidade ecológica. A interação entre as
-                  espécies melhora a capacidade do solo de reter água.
+            <div className="mt-10 md:px-10 space-y-5 poppins-regular text-white text-justify">
+              <div className="mb-20 space-y-5 poppins-regular text-white text-justify">
+                <p>
+                  Criado em janeiro de 2023, o Departamento de Combate à
+                  Desertificação (DCDE) faz parte do Ministério do Meio Ambiente
+                  e tem a missão de coordenar a implementação da Política
+                  Nacional de Combate à Desertificação e Mitigação dos Efeitos
+                  (PNCD), instituída pela Lei 13.153/2015. Além disso, é
+                  responsável por subsidiar e monitorar a implementação da
+                  Convenção das Nações Unidas para o Combate à Desertificação
+                  (UNCCD).
                 </p>
+                <p>
+                  Segundo o Instituto Brasileiro de Geografia e Estatística
+                  (IBGE), o semiárido brasileiro, onde predomina a Caatinga,
+                  possui cerca de 1,7 milhão de estabelecimentos da agricultura
+                  familiar, que dependem da preservação do bioma para gerar
+                  alimentos e renda. Segundo Alexandre, o Departamento de
+                  Combate à Desertificação tem adotado ações para frear a
+                  degradação no semiárido.
+                </p>
+              </div>
 
+              <div className="flex gap-10 items-start max-md:flex-col">
                 <div className="bg-[#4A3D29] p-10 rounded-[30px] md:w-[90%] relative ml-8">
                   <Image
                     src={quotes}
                     alt="aspas"
                     className="absolute top-6 left-[-30px] w-16 h-16"
                   />
-                  <p className="text-[25px] roboto-bold pl-4">
-                    Na agrofloresta, tem que haver uma sucessão de espécies. Tem
-                    de haver primeiramente os musgos, as pioneiras, as
-                    colonizadoras, para preparar o ambiente
+                  <p className="text-[25px] roboto text-left pl-4">
+                    O objetivo é implementar boas práticas como agroflorestas,
+                    manejo sustentável e florestal da Caatinga, recuperação de
+                    solos degradados, uso de curvas de nível e tecnologias
+                    sociais que ajudem na recomposição da vegetação
                   </p>
                   <br />
-                  <p className="pl-4">Rivaneide Almeida</p>
+                  <div>
+                    <p className="pl-4 roboto-bold">Alexandre Pires</p>
+                    <p className="pl-4 text-sm">
+                      diretor de Combate à Desertificação do Ministério do Meio
+                      Ambiente
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-[#4A3D29] p-10 rounded-[30px] md:w-[90%] relative ml-8">
+                  <Image
+                    src={quotes}
+                    alt="aspas"
+                    className="absolute top-6 left-[-30px] w-16 h-16"
+                  />
+                  <p className="text-[25px] roboto text-left pl-4">
+                    A Caatinga é um bioma único, não existe em nenhum outro
+                    lugar do mundo. Sua vegetação, fauna e solos são exclusivos
+                    do Brasil. Isso torna essencial protegê-la da
+                    desertificação, pois há populações que dependem dela para
+                    seus modos de vida e cultivo
+                  </p>
+                  <br />
+                  <div>
+                    <p className="pl-4 roboto-bold">Alexandre Pires</p>
+                    <p className="pl-4 text-sm">
+                      diretor de Combate à Desertificação do Ministério do Meio
+                      Ambiente
+                    </p>
+                  </div>
                 </div>
               </div>
-              <p className="mt-[-18px] max-md:mt-10">
-                “O solo se torna como uma esponja, absorvendo melhor a água e os
-                nutrientes necessários para sobreviver. Onde não há mata, não há
-                água”, afirma a engenheira agrônoma. 
-              </p>
-              <p>
-                Segundo Rivaneide, os SAFs podem ser implementados mesmo em
-                áreas pequenas, de pelo menos 20 metros quadrados. No entanto,
-                muitos agricultores ainda hesitam em adotar essa prática, seja
-                pela falta de assistência técnica que ofereça o suporte
-                necessário para garantir a segurança alimentar, seja pela
-                incerteza em relação à posse da terra. “Eles têm medo. Se
-                cultivarem em terras de outras pessoas, podem ser surpreendidos
-                caso o proprietário decida mudar o uso do terreno, como, por
-                exemplo, para pastagem. Todo o trabalho pode ser perdido”,
-                explica.
-              </p>
+              
             </div>
           </div>
 
