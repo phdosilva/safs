@@ -17,6 +17,7 @@ import PernambucoLoading from "./components/pernambucoLoading";
 export default function Home() {
   return (
     <>
+      {/* Banner */}
       <section className="w-full max-w-screen h-screen flex flex-col justify-center items-center text-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
@@ -113,6 +114,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Segunda Seção */}
         <div className="flex w-full ">
           <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#271800] bg-[#FCEEE2] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
           Desertificação da Caatinga
@@ -123,8 +126,6 @@ export default function Home() {
             alt="Cacto"
           ></Image>
         </div>
-
-        {/* Segunda Seção */}
         <section className="bg-[#FCEEE2] text-black pb-[200px] mb-[-200px]">
           <div
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
@@ -246,6 +247,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Terceira Seção */}
         {/* Aqui é o banner */}
         <div className="flex w-full ">
           <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#FFFFFF] bg-[#271800] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
@@ -257,8 +260,6 @@ export default function Home() {
             alt="Cacto"
           ></Image>
         </div>
-
-        {/* Terceira Seção */}
         <section className="bg-[#271800] text-white">
           <div
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-5 bg-[#271800]"
@@ -319,6 +320,8 @@ export default function Home() {
               </p>
             </div>
           </div>
+          
+          {/* Headline da quarta seção */}
           <div className="flex w-full ">
             <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#271800] bg-[#FCEEE2] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
               A Agrofloresta de Antônio Sabino
@@ -330,101 +333,117 @@ export default function Home() {
             ></Image>
           </div>
         </section>
+        
+        {/* Quarta Seção */}
+        <section className="w-full min-h-screen flex flex-col text-black bg-[#FCEEE2]">
+          <div
+            className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
+            style={{ padding: "2rem 2rem" }}
+          >
+            <div className="md:px-10 space-y-8 poppins-regular text-justify">
+              {/* Grid de imagens */}
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                {/* Imagem principal - ocupa 3 colunas */}
+                <div className="md:col-span-3">
+                  <Image
+                    src="/sec4_main.png"
+                    alt="Antônio Sabino na agrofloresta"
+                    width={800}
+                    height={600}
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
 
-                {/* Quarta Seção */}
-{/* Quarta Seção */}
-<section className="w-full min-h-screen flex flex-col text-black bg-[#FCEEE2]">
-  <div
-    className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
-    style={{ padding: "2rem 2rem" }}
-  >
-    <div className="md:px-10 space-y-8 poppins-regular text-justify">
-      {/* Grid de imagens */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        {/* Imagem principal - ocupa 3 colunas */}
-        <div className="md:col-span-3">
-          <Image
-            src="/sec4_main.png"
-            alt="Antônio Sabino na agrofloresta"
-            width={800}
-            height={600}
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </div>
+                {/* Coluna de imagens menores */}
+                <div className="flex flex-col gap-4">
+                  <br />
+                  <Image
+                    src="/sec4_small1.png"
+                    alt="Detalhe da agrofloresta 1"
+                    width={300}
+                    height={200}
+                    className="w-full object-cover rounded-xl"
+                  />
+                  <Image
+                    src="/sec4_small2.png"
+                    alt="Detalhe da agrofloresta 2"
+                    width={300}
+                    height={200}
+                    className="w-full object-cover rounded-xl"
+                  />
+                  <Image
+                    src="/sec4_small3.png"
+                    alt="Detalhe da agrofloresta 3"
+                    width={300}
+                    height={200}
+                    className="w-full object-cover rounded-xl"
+                  />
+                  <br />
+                </div>
+              </div>
 
-        {/* Coluna de imagens menores */}
-        <div className="flex flex-col gap-4">
-          <br />
-          <Image
-            src="/sec4_small1.png"
-            alt="Detalhe da agrofloresta 1"
-            width={300}
-            height={200}
-            className="w-full object-cover rounded-xl"
-          />
-          <Image
-            src="/sec4_small2.png"
-            alt="Detalhe da agrofloresta 2"
-            width={300}
-            height={200}
-            className="w-full object-cover rounded-xl"
-          />
-          <Image
-            src="/sec4_small3.png"
-            alt="Detalhe da agrofloresta 3"
-            width={300}
-            height={200}
-            className="w-full object-cover rounded-xl"
-          />
-          <br />
-        </div>
-      </div>
+              <div className="space-y-5 text-[#271800]">
+                <p>
+                  Na comunidade São Bento, em Santa Cruz da Baixa Verde, sertão de Pernambuco, Antônio Sabino tem transformado a paisagem e a vida da sua família por meio da agrofloresta. Desde 1997, ele substituiu o monocultivo tradicional pelo sistema agroflorestal, desafiando a tradição agrícola herdada do pai e do avô.
+                </p>
+                <p>
+                  “Retirávamos toda a vegetação para plantar cana-de-açúcar. Eu fui educado a plantar monocultivo de cana, milho, feijão, mandioca — tudo era cultivado separado”, relembra Antônio. A transição para o Sistema Agroflorestal não foi fácil: o solo estava degradado e demorou a se recuperar. Mas, com persistência, ele viu sua produção prosperar.
+                </p>
+                <p>
+                  Sabino iniciou sua jornada na agrofloresta ainda na adolescência, quando começou a participar de atividades promovidas pelo Sindicato dos Trabalhadores Rurais e pelo Centro de Desenvolvimento Agroecológico Sabiá. Foi por meio dessas formações, principalmente dentro dos grupos de jovens, que ele passou a enxergar a importância de cuidar do meio ambiente e a questionar o modelo agrícola convencional adotado por sua família.
+                </p>
+                <p>
+                  Essa caminhada foi fortalecida pelo trabalho dos Sindicatos dos Trabalhadores Rurais de Triunfo e de Bom Jardim, que tiveram papel essencial na organização das famílias e na criação de espaços de aprendizado sobre agroecologia. Essas iniciativas foram fundamentais para incentivar agricultores e agricultoras a se tornarem multiplicadores da agricultura agroflorestal, abrindo caminho para a fundação de associações como a Adessu Baixa Verde, no Sertão, e a Agroflor, no Agreste.
+                </p>
+                <p>
+                  Além de melhorar a qualidade de vida da família — permitindo que seus filhos estudem e tenham uma alimentação mais saudável — a agrofloresta fortaleceu sua missão de vida. “Hoje, eu acredito que tenho ainda mais sonhos. Estou velho, careca, cansado, mas o meu sonho é ampliar ainda mais esse trabalho e contribuir para que outras pessoas também possam aderir”, afirma o agricultor.
+                </p>
+                <p>
+                  Para Antônio, cada árvore plantada é uma pequena, mas significativa, contribuição para um futuro melhor: “O que eu faço é muito pouco, mas sigo a lógica de Madre Teresa de Calcutá. Ela diz que o que fazemos é apenas uma gota de água no oceano, mas sem ela, o oceano seria menor”.
+                </p>
+                <p>
+                  Atualmente, sua experiência inspira outros agricultores da região, embora ele reconheça que a adesão aos SAFs ainda é baixa. O incentivo financeiro e o suporte técnico são, segundo Antônio, fundamentais para expandir a agroecologia.
+                </p>
+              </div>
+            </div>
 
-      <div className="space-y-5 text-[#271800]">
-        <p>
-          Na comunidade São Bento, em Santa Cruz da Baixa Verde, sertão de Pernambuco, Antônio Sabino tem transformado a paisagem e a vida da sua família por meio da agrofloresta. Desde 1997, ele substituiu o monocultivo tradicional pelo sistema agroflorestal, desafiando a tradição agrícola herdada do pai e do avô.
-        </p>
-        <p>
-          “Retirávamos toda a vegetação para plantar cana-de-açúcar. Eu fui educado a plantar monocultivo de cana, milho, feijão, mandioca — tudo era cultivado separado”, relembra Antônio. A transição para o Sistema Agroflorestal não foi fácil: o solo estava degradado e demorou a se recuperar. Mas, com persistência, ele viu sua produção prosperar.
-        </p>
-        <p>
-          Sabino iniciou sua jornada na agrofloresta ainda na adolescência, quando começou a participar de atividades promovidas pelo Sindicato dos Trabalhadores Rurais e pelo Centro de Desenvolvimento Agroecológico Sabiá. Foi por meio dessas formações, principalmente dentro dos grupos de jovens, que ele passou a enxergar a importância de cuidar do meio ambiente e a questionar o modelo agrícola convencional adotado por sua família.
-        </p>
-        <p>
-          Essa caminhada foi fortalecida pelo trabalho dos Sindicatos dos Trabalhadores Rurais de Triunfo e de Bom Jardim, que tiveram papel essencial na organização das famílias e na criação de espaços de aprendizado sobre agroecologia. Essas iniciativas foram fundamentais para incentivar agricultores e agricultoras a se tornarem multiplicadores da agricultura agroflorestal, abrindo caminho para a fundação de associações como a Adessu Baixa Verde, no Sertão, e a Agroflor, no Agreste.
-        </p>
-        <p>
-          Além de melhorar a qualidade de vida da família — permitindo que seus filhos estudem e tenham uma alimentação mais saudável — a agrofloresta fortaleceu sua missão de vida. “Hoje, eu acredito que tenho ainda mais sonhos. Estou velho, careca, cansado, mas o meu sonho é ampliar ainda mais esse trabalho e contribuir para que outras pessoas também possam aderir”, afirma o agricultor.
-        </p>
-        <p>
-          Para Antônio, cada árvore plantada é uma pequena, mas significativa, contribuição para um futuro melhor: “O que eu faço é muito pouco, mas sigo a lógica de Madre Teresa de Calcutá. Ela diz que o que fazemos é apenas uma gota de água no oceano, mas sem ela, o oceano seria menor”.
-        </p>
-        <p>
-          Atualmente, sua experiência inspira outros agricultores da região, embora ele reconheça que a adesão aos SAFs ainda é baixa. O incentivo financeiro e o suporte técnico são, segundo Antônio, fundamentais para expandir a agroecologia.
-        </p>
-      </div>
-    </div>
+            {/* Bloco de citação */}
+            <div className="md:px-10 mt-10">
+              <div className="bg-[#F2E1D3] p-8 rounded-3xl max-w-2xl relative shadow-md">
+                <Image
+                  src="/sec4_small4.png"
+                  alt="Antônio Sabino"
+                  width={100}
+                  height={100}
+                  className="rounded-full absolute top-8 right-8"
+                />
+                <Image
+                src={brownQuotes} alt="aspas" className="absolute top-6 left-[-30px] w-16 h-16" />
+                <blockquote className="text-[#271800] text-xl pl-10 pr-20 justify-center  leading-tight roboto-bold">
+                  “Se houvesse um apoio das ONGs de extensão rural, ou uma política que possibilitasse essa assistência técnica, acho que poderia avançar.”
+                </blockquote>
+                <p className="pl-4 text-[#271800] text-left font-bold">Antônio Sabino</p>
+              </div>
+            </div>
+          </div>
 
-    {/* Bloco de citação */}
-    <div className="md:px-10 mt-10">
-      <div className="bg-[#F2E1D3] p-8 rounded-3xl max-w-2xl relative shadow-md">
-        <Image
-          src="/sec4_small4.png"
-          alt="Antônio Sabino"
-          width={100}
-          height={100}
-          className="rounded-full absolute top-8 right-8"
-        />
-        <Image
-        src={brownQuotes} alt="aspas" className="absolute top-6 left-[-30px] w-16 h-16" />
-        <blockquote className="text-[#271800] text-xl pl-10 pr-20 justify-center  leading-tight roboto-bold">
-          “Se houvesse um apoio das ONGs de extensão rural, ou uma política que possibilitasse essa assistência técnica, acho que poderia avançar.”
-        </blockquote>
-        <p className="pl-4 text-[#271800] text-left font-bold">Antônio Sabino</p>
-      </div>
-    </div>
-  </div>
-</section>
+          
+          <div className="flex w-full ">
+            <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#FFFFFF] bg-[#271800] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
+              Estratégias de combate à desertificação
+            </h2>
+            <Image
+              className="max-w-[182px] max-md:max-w-[120px] lg:ml-20 mt-10 md:mb-[-25px] max-md:mb-[-70px]"
+              src={brownCactus}
+              alt="Cacto"
+            ></Image>
+          </div>
+        </section>
+
+        {/* Quinta Seção */}
+
+
+        {/* Sexta Seção */}
       </main>
     </>
   );
