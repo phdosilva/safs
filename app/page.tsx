@@ -2,9 +2,16 @@ import Image from "next/image";
 import bannerImg from "../public/banner.png";
 import videoTemporary from "../public/videoTemporary.png";
 import brownCactus from "../public/brownCactus.svg";
+import whiteCactus from "../public/whiteCactus.svg";
 import quotes from "../public/quotes.svg";
+import brownQuotes from "../public/brownQuotes.svg";
 import scrollSVG from "../public/scroll.svg";
 import ellipseSVG from "../public/ellipse.svg";
+import solar from "../public/solar.png";
+import solo from "../public/solo.png";
+import trator from "../public/trator.png";
+import mineracao from "../public/mineracao.png";
+
 import PernambucoLoading from "./components/pernambucoLoading";
 
 export default function Home() {
@@ -49,7 +56,7 @@ export default function Home() {
 
       <main className="">
         {/* Primeira Seção */}
-        <section className="w-full min-h-screen flex flex-col text-white bg-[#271800]">
+        <section className="w-full min-h-screen flex flex-col text-white bg-[#271800] pb-[200px] mb-[-200px]">
           <div className="max-w-5xl mx-auto flex flex-col min-h-screen space-y-8" style={{ padding: "2rem 2rem" }}>
             <div className="md:px-10 space-y-8 poppins-regular">
               <p>
@@ -106,6 +113,139 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <div className="flex w-full ">
+          <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#271800] bg-[#FCEEE2] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
+            Como os Sistemas Agroflorestais podem salvar a caatinga?
+          </h2>
+          <Image
+            className="max-w-[182px] max-md:max-w-[120px] lg:ml-20 mt-10 md:mb-[-25px] max-md:mb-[-70px]"
+            src={whiteCactus}
+            alt="Cacto"
+          ></Image>
+        </div>
+
+        {/* Segunda Seção */}
+        <section className="bg-[#FCEEE2] text-black pb-[200px] mb-[-200px]">
+          <div
+            className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
+            style={{ padding: "2rem 2rem" }}
+          >
+            <div className="mt-10 md:px-7 space-y-5 poppins-regular  text-justify">
+              <p>
+                A desertificação é um processo em que a vegetação de áreas secas diminui a ponto de desaparecer,
+                tornando o solo excessivamente seco e sem nutrientes, similar ao dos desertos. A ocorrência de zonas
+                áridas ou desérticas no Brasil não é algo natural, sua causa se deve inteiramente pela interferência
+                humana, através do desmatamento, do uso irresponsável do solo em processos agrícolas e da extração
+                desenfreada de recursos naturais. 
+              </p>
+              <p>
+                Segundo o estudo publicado em 2024 pela revista Applied Soil Ecology, a desertificação da Caatinga reduz
+                mais de 50% da funcionalidade do solo e compromete a sua capacidade de sustentar o crescimento das
+                plantas. Além disso, com o solo enfraquecido, parte da infiltração de água é impedida, o que acelera o
+                processo de erosão.
+              </p>
+              <p>
+                O processo de desertificação da Caatinga é impulsionado principalmente pela degradação do solo, através
+                do uso desmedido dos recursos naturais, das queimadas e do desmatamento, e pelos efeitos das mudanças
+                climáticas. De acordo com John Cunha, pesquisador do Observatório Nacional da Caatinga, as principais
+                causas de degradação do bioma são:
+              </p>
+
+              <div className="flex  justify-around my-10">
+                <div className="flex max-md:flex-col max-md:items-center max-md:gap-10 w-full justify-around">
+                  <div className="w-3/4">
+                    <Image src={solo} alt="solo"></Image>
+                    <p className="text-[#271800] text-center font-bold mt-4">Irrigação excessiva do solo</p>
+                  </div>
+                  <div className="w-3/4">
+                    <Image src={mineracao} alt="mineracao"></Image>
+                    <p className="text-[#271800] text-center font-bold mt-4">Mineração e industrialização</p>
+                  </div>
+                </div>
+                <div className="flex max-md:flex-col max-md:items-center max-md:gap-10 w-full justify-around">
+                  <div className="w-3/4">
+                    <Image src={trator} alt="trator"></Image>
+                    <p className="text-[#271800] text-center font-bold mt-4">Expansão da fronteira agrícola</p>
+                  </div>
+                  <div className="w-3/4">
+                    <Image src={solar} alt="solar"></Image>
+                    <p className="text-[#271800] text-center font-bold mt-4">Parques solares e eólicos</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative flex items-center px-4 py-10 min-h-[400px] max-lg:flex-col-reverse">
+                {/* Texto */}
+                <div className="bg-[#e8d6c7] p-6 rounded-[20px] max-w-[500px] z-10 relative">
+                  <p className="text-[16px] leading-relaxed roboto-regular text-justify p-10">
+                    O desmatamento e a desertificação da Caatinga promovem danos severos ao planeta, tendo em vista que
+                    o bioma é responsável por capturar grandes proporções de CO2, que seriam lançados na atmosfera. A
+                    Caatinga, em áreas úmidas, pode sequestrar até cinco toneladas de CO2 por hectare-ano, enquanto em
+                    áreas mais secas, o sequestro varia entre 1,5 a 2,5 toneladas de CO2 por hectare-ano. Com a
+                    destruição do bioma, o efeito estufa é agravado e suas consequências podem ser percebidas por toda
+                    superfície.
+                  </p>
+                </div>
+
+                {/* Vídeo ou imagem sobreposta */}
+                <div className="lg:absolute right-[8%] top-[0%] bg-black w-[350px] h-[350px] rounded-[20px] z-20 flex items-center justify-center text-white text-center shadow-xl max-lg:mb-[-30px]">
+                  <p className="roboto-regular text-sm">o equivalente à</p>
+                </div>
+              </div>
+
+              <div className="flex gap-10 items-start max-md:flex-col">
+                <p className="md:w-[70%]">
+                  Segundo dados do Relatório Anual do Desmatamento de 2023, elaborado pelo MapBiomas, a Caatinga já
+                  perdeu mais de 40% de seu território original e sofreu um aumento de 43,4% de áreas desmatadas em
+                  comparação ao ano de 2022. Historicamente, isso tem sido impulsionado pela expansão das atividades
+                  agropecuárias, porém a implantação de empreendimentos de energia renovável (parques solares e eólicos)
+                  também se tornou um vetor significativo, atingindo mais de 4.302 hectares. O desmatamento é a
+                  principal causa da desertificação da Caatinga, pois expõe o solo ao sol e às chuvas, acelerando o
+                  processo de erosão e
+                </p>
+
+                <div className="bg-[#EFE1D4] p-10 rounded-[30px] md:w-[90%] relative ml-8">
+                  <Image src={brownQuotes} alt="aspas" className="absolute top-6 left-[-30px] w-16 h-16" />
+                  <p className="text-[25px] roboto-bold pl-4 text-[#271800]">
+                    A gente tem visto novas dinâmicas de degradação impulsionadas pelos megaempreendimentos. Esses que
+                    têm capacidade de fato para modificar o ambiente de forma significativa
+                  </p>
+                  <br />
+                  <p className="pl-4">Rivaneide Almeida</p>
+                </div>
+              </div>
+              <p className="mt-[-18px] max-md:mt-10">
+                reduzindo a fertilidade. Além disso, sem vegetação, a água não consegue infiltrar adequadamente na
+                terra, o que prejudica a absorção de nutrientes e a regeneração da vegetação. Todas estas condições
+                reduzem a umidade do solo e favorecem a desertificação. 
+              </p>
+              <p>
+                Em consequência disso, observa-se o impacto na produção de alimentos, a diminuição dos recursos
+                hídricos, a ameaça à biodiversidade e o aumento do efeito estufa no bioma, prejudicando as vidas
+                existentes no bioma. Além disso, a dinâmica econômica e social das comunidades que vivem na Caatinga
+                sofre alterações, pois, com a escassez de recursos, é comum a ocorrência de migrações forçadas para
+                outras regiões.
+              </p>
+              <p>
+                O processo de desertificação da Caatinga não é algo recente, e suas consequências vêm sendo observadas
+                há décadas. Ainda nos anos 1970, o engenheiro agrônomo João Vasconcelos Sobrinho realizou os primeiros
+                estudos sobre este fenômeno no semiárido brasileiro. Sendo o pioneiro no estudo do tema, suas pesquisas
+                evidenciaram como o desmatamento, o manejo inadequado do solo e o uso intensivo dos recursos naturais
+                aceleram a degradação ambiental do semiárido nordestino. Ele classificou diferentes níveis de degradação
+                da terra, desenvolvendo um sistema de categorias essencial para compreender o avanço da desertificação. 
+              </p>
+              <p>
+                As características dos diferentes tipos de solo, geralmente pedregosos, endurecidos,  argilosos ou
+                arenosos, todos com baixa fertilidade e pouca capacidade de drenagem, combinados ao desmatamento e
+                práticas agropecuárias inadequadas influenciam muito no processo de degradação. Dados do Instituto
+                Nacional do Semiárido (INSA), revelam que 85% do semiárido brasileiro está em processo de desertificação
+                moderado, enquanto 9% já está efetivamente desertificado, o que torna o processo de reversão quase
+                impossível. Para frear a situação, é indispensável a preservação da Caatinga, já que é ela que protege o
+                solo da erosão. 
+              </p>
+            </div>
+          </div>
+        </section>
         {/* Aqui é o banner */}
         <div className="flex w-full ">
           <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#FFFFFF] bg-[#271800] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
@@ -121,11 +261,11 @@ export default function Home() {
         {/* Terceira Seção */}
         <section className="bg-[#271800] text-white">
           <div
-            className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#271800]"
+            className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-5 bg-[#271800]"
             style={{ padding: "2rem 2rem" }}
           >
             <Image src={videoTemporary} alt="video" className="pt-20"></Image>
-            <div className="mt-10 md:px-7 space-y-8 poppins-regular text-white text-justify">
+            <div className="mt-10 md:px-7 space-y-5 poppins-regular text-white text-justify">
               <p>
                 Imagine uma paisagem no sertão, onde, em vez de solo seco e empobrecido, há um sistema diverso de
                 plantas crescendo juntas. Enquanto árvores como angico, juazeiro e umbuzeiro oferecem sombra e ajudam a
@@ -149,12 +289,15 @@ export default function Home() {
                   Os SAFs funcionam através de sucessão ecológica. De acordo com Rivaneide Almeida, engenheira agrônoma
                   e coordenadora territorial do Centro de Desenvolvimento Agroecológico Sabiá no Sertão do Pajeú, os
                   Sistemas Agroflorestais obedecem aos princípios da natureza. Essa abordagem está alinhada com os
-                  princípios da agroecologia, que busca formas de produção agrícola sustentáveis.
+                  princípios da agroecologia, que busca formas de produção agrícola sustentáveis. e integradas ao meio
+                  ambiente. Ao combinar uma vegetação diversificada, os SAFs criam ecossistemas equilibrados que
+                  favorecem a regeneração da terra e a manutenção da diversidade ecológica. A interação entre as
+                  espécies melhora a capacidade do solo de reter água.
                 </p>
 
                 <div className="bg-[#4A3D29] p-10 rounded-[30px] md:w-[90%] relative ml-8">
                   <Image src={quotes} alt="aspas" className="absolute top-6 left-[-30px] w-16 h-16" />
-                  <p className="text-[25px] roboto-regular pl-4">
+                  <p className="text-[25px] roboto-bold pl-4">
                     Na agrofloresta, tem que haver uma sucessão de espécies. Tem de haver primeiramente os musgos, as
                     pioneiras, as colonizadoras, para preparar o ambiente
                   </p>
@@ -162,12 +305,9 @@ export default function Home() {
                   <p className="pl-4">Rivaneide Almeida</p>
                 </div>
               </div>
-              <p>
-                e integradas ao meio ambiente. Ao combinar uma vegetação diversificada, os SAFs criam ecossistemas
-                equilibrados que favorecem a regeneração da terra e a manutenção da diversidade ecológica.
-                <br />A interação entre as espécies melhora a capacidade do solo de reter água. “O solo se torna como
-                uma esponja, absorvendo melhor a água e os nutrientes necessários para sobreviver. Onde não há mata, não
-                há água”, afirma a engenheira agrônoma. 
+              <p className="mt-[-18px] max-md:mt-10">
+                “O solo se torna como uma esponja, absorvendo melhor a água e os nutrientes necessários para sobreviver.
+                Onde não há mata, não há água”, afirma a engenheira agrônoma. 
               </p>
               <p>
                 Segundo Rivaneide, os SAFs podem ser implementados mesmo em áreas pequenas, de pelo menos 20 metros
