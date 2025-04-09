@@ -115,7 +115,7 @@ export default function Home() {
         </section>
         <div className="flex w-full ">
           <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#271800] bg-[#FCEEE2] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
-            Como os Sistemas Agroflorestais podem salvar a caatinga?
+          Desertificação da Caatinga
           </h2>
           <Image
             className="max-w-[182px] max-md:max-w-[120px] lg:ml-20 mt-10 md:mb-[-25px] max-md:mb-[-70px]"
