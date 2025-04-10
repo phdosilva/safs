@@ -15,7 +15,7 @@ import trator from "../public/trator.png";
 import mineracao from "../public/mineracao.png";
 
 import PernambucoLoading from "./components/pernambucoLoading";
-// import ImageCarousel from "./components/carousel";
+import ImageCarousel from "./components/carousel";
 
 const slides = [
   {
@@ -550,8 +550,11 @@ export default function Home() {
               </div>
 
               <div className="min-h-screen bg-gradient-to-b text-white py-12">
-                <div className="container mx-auto px-4">{/* <ImageCarousel slides={slides} /> */}</div>
+                <div className="container mx-auto px-4"><ImageCarousel slides={slides}></ImageCarousel></div>
               </div>
+
+
+
             </div>
           </div>
 
