@@ -6,6 +6,9 @@ export const handleScrollAnimation = (
     containerRef: RefObject<HTMLDivElement | null>
 ) => {
     return () => {
+        // Check if we're in a browser environment
+        if (typeof window === 'undefined' || typeof document === 'undefined') return;
+        
         if (!lottieRef.current || !containerRef.current) return;
 
         const rect = containerRef.current.getBoundingClientRect();
@@ -38,7 +41,7 @@ export const handleScrollAnimation = (
             const fraction = 1 - top / screenHeight;
             lottieRef.current.goToAndStop(totalFrames * fraction, true);
         } else {
-            // The element can’t reach the top, so treat the bottom of the page as "100%"
+            // The element can't reach the top, so treat the bottom of the page as "100%"
             const startScroll = offsetTop - screenHeight; // when the element just enters
             const endScroll = maxScroll;                 // bottom of the page
 
