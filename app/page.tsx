@@ -16,6 +16,7 @@ import mineracao from "../public/mineracao.png";
 
 import PernambucoLoading from "./components/pernambucoLoading";
 import ImageCarousel from "./components/carousel";
+import CarbonSequestrationBreathingComparative from "./components/CarbonSequestrationBreathingComparative";
 
 const slides = [
   {
@@ -234,7 +235,7 @@ export default function Home() {
 
                 {/* Vídeo ou imagem sobreposta */}
                 <div className="lg:absolute right-[8%] top-[0%] bg-black w-[350px] h-[350px] rounded-[20px] z-20 flex items-center justify-center text-white text-center shadow-xl max-lg:mb-[-30px]">
-                  <p className="roboto-regular text-sm">o equivalente à</p>
+                  <CarbonSequestrationBreathingComparative />
                 </div>
               </div>
 
