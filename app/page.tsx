@@ -17,8 +17,8 @@ import trator from "../public/trator.png";
 import mineracao from "../public/mineracao.png";
 
 import PernambucoLoading from "./components/pernambucoLoading";
+import GraphComparative from "./components/GraphComparative";
 import ImageCarousel from "./components/carousel";
-import CarbonSequestrationBreathingComparative from "./components/CarbonSequestrationBreathingComparative";
 
 import { useState, useEffect } from "react";
 
@@ -164,6 +164,7 @@ export default function Home() {
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                style={{ border: "0" }}
               ></iframe>
             </div>
 
@@ -289,7 +290,7 @@ export default function Home() {
 
                 {/* Vídeo ou imagem sobreposta */}
                 <div className="lg:absolute right-[8%] top-[0%] bg-black w-[350px] h-[350px] rounded-[20px] z-20 flex items-center justify-center text-white text-center shadow-xl max-lg:mb-[-30px]">
-                  <CarbonSequestrationBreathingComparative />
+                  <GraphComparative />
                 </div>
               </div>
 
