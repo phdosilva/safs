@@ -1,6 +1,8 @@
 import Image from "next/image";
 import bannerImg from "../public/banner.png";
-import videoTemporary from "../public/videoTemporary.png";
+import desertificacaoImage from "../public/desertificacao.jpg";
+import agroflorestaCaatingaImage from "../public/agrofloresta_na_caatinga.png";
+import antonioSabinoImage from "../public/antonio_sabino.jpg";
 import brownCactus from "../public/brownCactus.svg";
 import whiteCactus from "../public/whiteCactus.svg";
 import quotes from "../public/quotes.svg";
@@ -176,7 +178,18 @@ export default function Home() {
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
             style={{ padding: "2rem 2rem" }}
           >
-            <div className="mt-10 md:px-7 space-y-5 poppins-regular">
+
+            <div className="space-y-2 text-justify mt-4 md:px-7">
+              <p className="text-right poppins-medium font-[14px]">
+                Foto: Acervo Centro Sábia
+              </p>
+              <Image src={desertificacaoImage} alt="video" className="rounded-xl"></Image>
+              <p className="poppins-light font-sm">
+                <span className="poppins-medium">Imagem aérea de área degradada centro sabiá:</span> O processo de desertificação da Caatinga é impulsionado principalmente pela degradação do solo. 85% do Semiárido brasileiro está em processo de desertificação moderado, enquanto 9% já está efetivamente desertificado.
+              </p>
+            </div>
+            
+            <div className="mt-4 md:px-7 space-y-5 poppins-regular">
               <p>
                 A desertificação é um processo em que a vegetação de áreas secas diminui a ponto de desaparecer,
                 tornando o solo excessivamente seco e sem nutrientes, similar ao dos desertos. A ocorrência de zonas
@@ -398,45 +411,15 @@ export default function Home() {
           >
             <div className="md:px-10 space-y-8 poppins-regular">
               {/* Grid de imagens */}
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                {/* Imagem principal - ocupa 3 colunas */}
-                <div className="md:col-span-3">
-                  <Image
-                    src="/sec4_main.png"
-                    alt="Antônio Sabino na agrofloresta"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </div>
-
-                {/* Coluna de imagens menores */}
-                <div className="flex flex-col gap-4">
-                  <br />
-                  <Image
-                    src="/sec4_small1.png"
-                    alt="Detalhe da agrofloresta 1"
-                    width={300}
-                    height={200}
-                    className="w-full object-cover rounded-xl"
-                  />
-                  <Image
-                    src="/sec4_small2.png"
-                    alt="Detalhe da agrofloresta 2"
-                    width={300}
-                    height={200}
-                    className="w-full object-cover rounded-xl"
-                  />
-                  <Image
-                    src="/sec4_small3.png"
-                    alt="Detalhe da agrofloresta 3"
-                    width={300}
-                    height={200}
-                    className="w-full object-cover rounded-xl"
-                  />
-                  <br />
-                </div>
-              </div>
+              <div className="space-y-2 text-justify mt-4">
+              <p className="text-right poppins-medium font-[14px]">
+                Foto: Acervo Centro Sábia
+              </p>
+              <Image src={antonioSabinoImage} alt="video" className="rounded-xl"></Image>
+              <p className="poppins-light font-sm">
+                <span className="poppins-medium">Antônio Sabino em sua Agrofloresta:</span> Em Santa Cruz da Baixa Verde, Antônio Sabino utiliza o sistema agroflorestal desde 1997. A agrofloresta do Sítio São Bento é uma referência na Caatinga
+              </p>
+            </div>
 
               <div className="space-y-5 text-[#271800]">
                 <p>
@@ -567,9 +550,6 @@ export default function Home() {
               <div className="min-h-screen bg-gradient-to-b text-white py-12">
                 <div className="container mx-auto px-4"><ImageCarousel slides={slides}></ImageCarousel></div>
               </div>
-
-
-
             </div>
           </div>
 
@@ -587,7 +567,18 @@ export default function Home() {
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
             style={{ padding: "2rem 2rem" }}
           >
-            <div className="mt-10 md:px-7 space-y-5 poppins-regular">
+
+            <div className="space-y-2 text-justify mt-4 md:px-7">
+              <p className="text-right poppins-medium font-[14px]">
+                Foto: Acervo Centro Sábia
+              </p>
+              <Image src={agroflorestaCaatingaImage} alt="video" className="rounded-xl"></Image>
+              <p className="poppins-light font-sm">
+                <span className="poppins-medium">Agrofloresta na Caatinga:</span>  As agroflorestas são uma estratégia eficaz no combate à desertificação por recuperar o solo e produzir alimentos. Entretanto, desafios de ordem política e econômica impedem sua implementação de forma mais expansiva. Foto: Acervo Centro Sabiá.
+              </p>
+            </div>
+
+            <div className="mt-2 md:px-7 space-y-5 poppins-regular">
               <p>
                 É fato que as agroflorestas são boas alternativas para o combate à desertificação, principalmente aliada
                 a outras tecnologias utilizadas no semiárido, como as cisternas para captação de água e o Reúso de Águas

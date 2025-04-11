@@ -38,6 +38,11 @@ body {
   font-weight: 400;
 }
 
+.poppins-light {
+  font-family: var(--font-poppins);
+  font-weight: 300;
+}
+
 .poppins-regular {
   font-family: var(--font-poppins);
   font-weight: 400;
@@ -46,6 +51,11 @@ body {
 .poppins-medium {
   font-family: var(--font-poppins);
   font-weight: 500;
+}
+
+.popping-semibold {
+  font-family: var(--font-poppins);
+  font-weight: 600;
 }
 
 .roboto-regular {
