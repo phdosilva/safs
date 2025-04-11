@@ -114,10 +114,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="md:px-10">
-              <video className="rounded-xl object-cover" controls muted>
-                <source src="/agroflorestas.mp4" type="video/mp4" />
-              </video>
+            <div className="video-container md:px-10 rounded-xl">
+              <iframe
+                src="https://www.youtube.com/embed/LaeN72uQ7ao?si=bTY5moEeelwhgr9k"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
 
             <div className="flex flex-col md:flex-row overflow-hidden">
@@ -306,7 +309,18 @@ export default function Home() {
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-5 bg-[#271800]"
             style={{ padding: "2rem 2rem" }}
           >
-            <Image src={videoTemporary} alt="video" className="pt-20"></Image>
+            <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%", height: 0 }} className="rounded-xl overflow-hidden">
+              <br />
+              <br />
+              <iframe
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                className="rounded-xl"
+                src="https://www.youtube.com/embed/w6z5RlvIdcM?si=CIc5dCV0RXIK6iSj"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
             <div className="mt-10 md:px-7 space-y-5 poppins-regular text-white">
               <p>
                 Imagine uma paisagem no sertão, onde, em vez de solo seco e empobrecido, há um sistema diverso de
