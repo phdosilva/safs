@@ -172,13 +172,13 @@ export default function Home() {
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
             style={{ padding: "2rem 2rem" }}
           >
-            <div className="mt-10 md:px-7 space-y-5 poppins-regular  text-justify">
+            <div className="mt-10 md:px-7 space-y-5 poppins-regular">
               <p>
                 A desertificação é um processo em que a vegetação de áreas secas diminui a ponto de desaparecer,
                 tornando o solo excessivamente seco e sem nutrientes, similar ao dos desertos. A ocorrência de zonas
                 áridas ou desérticas no Brasil não é algo natural, sua causa se deve inteiramente pela interferência
                 humana, através do desmatamento, do uso irresponsável do solo em processos agrícolas e da extração
-                desenfreada de recursos naturais. 
+                desenfreada de recursos naturais.
               </p>
               <p>
                 Segundo o estudo publicado em 2024 pela revista Applied Soil Ecology, a desertificação da Caatinga reduz
@@ -219,7 +219,7 @@ export default function Home() {
               <div className="relative flex items-center px-4 py-10 min-h-[400px] max-lg:flex-col-reverse">
                 {/* Texto */}
                 <div className="bg-[#e8d6c7] p-6 rounded-[20px] max-w-[500px] z-10 relative">
-                  <p className="text-[16px] leading-relaxed roboto-regular text-justify p-10">
+                  <p className="text-[16px] leading-relaxed roboto-regular p-10">
                     O desmatamento e a desertificação da Caatinga promovem danos severos ao planeta, tendo em vista que
                     o bioma é responsável por capturar grandes proporções de CO2, que seriam lançados na atmosfera. A
                     Caatinga, em áreas úmidas, pode sequestrar até cinco toneladas de CO2 por hectare-ano, enquanto em
@@ -259,7 +259,7 @@ export default function Home() {
               <p className="mt-[-18px] max-md:mt-10">
                 reduzindo a fertilidade. Além disso, sem vegetação, a água não consegue infiltrar adequadamente na
                 terra, o que prejudica a absorção de nutrientes e a regeneração da vegetação. Todas estas condições
-                reduzem a umidade do solo e favorecem a desertificação. 
+                reduzem a umidade do solo e favorecem a desertificação.
               </p>
               <p>
                 Em consequência disso, observa-se o impacto na produção de alimentos, a diminuição dos recursos
@@ -274,7 +274,7 @@ export default function Home() {
                 estudos sobre este fenômeno no semiárido brasileiro. Sendo o pioneiro no estudo do tema, suas pesquisas
                 evidenciaram como o desmatamento, o manejo inadequado do solo e o uso intensivo dos recursos naturais
                 aceleram a degradação ambiental do semiárido nordestino. Ele classificou diferentes níveis de degradação
-                da terra, desenvolvendo um sistema de categorias essencial para compreender o avanço da desertificação. 
+                da terra, desenvolvendo um sistema de categorias essencial para compreender o avanço da desertificação.
               </p>
               <p>
                 As características dos diferentes tipos de solo, geralmente pedregosos, endurecidos,  argilosos ou
@@ -283,7 +283,7 @@ export default function Home() {
                 Nacional do Semiárido (INSA), revelam que 85% do semiárido brasileiro está em processo de desertificação
                 moderado, enquanto 9% já está efetivamente desertificado, o que torna o processo de reversão quase
                 impossível. Para frear a situação, é indispensável a preservação da Caatinga, já que é ela que protege o
-                solo da erosão. 
+                solo da erosão.
               </p>
             </div>
           </div>
@@ -307,7 +307,7 @@ export default function Home() {
             style={{ padding: "2rem 2rem" }}
           >
             <Image src={videoTemporary} alt="video" className="pt-20"></Image>
-            <div className="mt-10 md:px-7 space-y-5 poppins-regular text-white text-justify">
+            <div className="mt-10 md:px-7 space-y-5 poppins-regular text-white">
               <p>
                 Imagine uma paisagem no sertão, onde, em vez de solo seco e empobrecido, há um sistema diverso de
                 plantas crescendo juntas. Enquanto árvores como angico, juazeiro e umbuzeiro oferecem sombra e ajudam a
@@ -349,7 +349,7 @@ export default function Home() {
               </div>
               <p className="mt-[-18px] max-md:mt-10">
                 “O solo se torna como uma esponja, absorvendo melhor a água e os nutrientes necessários para sobreviver.
-                Onde não há mata, não há água”, afirma a engenheira agrônoma. 
+                Onde não há mata, não há água”, afirma a engenheira agrônoma.
               </p>
               <p>
                 Segundo Rivaneide, os SAFs podem ser implementados mesmo em áreas pequenas, de pelo menos 20 metros
@@ -381,7 +381,7 @@ export default function Home() {
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
             style={{ padding: "2rem 2rem" }}
           >
-            <div className="md:px-10 space-y-8 poppins-regular text-justify">
+            <div className="md:px-10 space-y-8 poppins-regular">
               {/* Grid de imagens */}
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 {/* Imagem principal - ocupa 3 colunas */}
@@ -480,7 +480,7 @@ export default function Home() {
                   className="rounded-full absolute top-8 right-8"
                 />
                 <Image src={brownQuotes} alt="aspas" className="absolute top-6 left-[-30px] w-16 h-16" />
-                <blockquote className="text-[#271800] text-xl pl-10 pr-20 justify-center  leading-tight roboto-bold">
+                <blockquote className="text-[#271800] text-xl pl-10 pr-20 justify-center leading-tight roboto-bold">
                   “Se houvesse um apoio das ONGs de extensão rural, ou uma política que possibilitasse essa assistência
                   técnica, acho que poderia avançar.”
                 </blockquote>
@@ -503,8 +503,8 @@ export default function Home() {
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-5 bg-[#271800]"
             style={{ padding: "2rem 2rem" }}
           >
-            <div className="mt-10 md:px-10 space-y-5 poppins-regular text-white text-justify">
-              <div className="mb-20 space-y-5 poppins-regular text-white text-justify">
+            <div className="mt-10 md:px-10 space-y-5 poppins-regular text-white">
+              <div className="mb-20 space-y-5 poppins-regular text-white">
                 <p>
                   Criado em janeiro de 2023, o Departamento de Combate à Desertificação (DCDE) faz parte do Ministério
                   do Meio Ambiente e tem a missão de coordenar a implementação da Política Nacional de Combate à
@@ -572,7 +572,7 @@ export default function Home() {
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
             style={{ padding: "2rem 2rem" }}
           >
-            <div className="mt-10 md:px-7 space-y-5 poppins-regular  text-justify">
+            <div className="mt-10 md:px-7 space-y-5 poppins-regular">
               <p>
                 É fato que as agroflorestas são boas alternativas para o combate à desertificação, principalmente aliada
                 a outras tecnologias utilizadas no semiárido, como as cisternas para captação de água e o Reúso de Águas
