@@ -12,8 +12,6 @@ import brownQuotes from "../public/brownQuotes.svg";
 import scrollSVG from "../public/scroll.svg";
 import ellipseSVG from "../public/ellipse.svg";
 import solar from "../public/solar.png";
-import dados from "../public/dados.png";
-import circles from "../public/circles.png";
 import solo from "../public/solo.png";
 import trator from "../public/trator.png";
 import mineracao from "../public/mineracao.png";
@@ -27,35 +25,35 @@ import { useState, useEffect } from "react";
 const slides = [
   {
     id: 1,
-    imageUrl: "/sec4_small1.png?height=600&width=1200",
+    imageUrl: "/carousel_1.png?height=600&width=1200",
     title: "Atualização do Índice de Aridez",
     description:
       "Mede a relação entre a chuva e a evaporação, permitindo mapear áreas mais suscetíveis à desertificação. A nova versão revelou o avanço da aridez na Caatinga e até a formação de zonas áridas fora do semiárido",
   },
   {
     id: 2,
-    imageUrl: "/sec4_small2.png?height=600&width=1200",
+    imageUrl: "/carousel_2.png?height=600&width=1200",
     title: "Monitoramento de Secas",
     description:
       "Sistemas avançados de monitoramento permitem acompanhar e prever períodos de seca, ajudando comunidades a se prepararem para condições adversas",
   },
   {
     id: 3,
-    imageUrl: "/sec4_small2.png?height=600&width=1200",
+    imageUrl: "/carousel_3.png?height=600&width=1200",
     title: "Recuperação de Áreas Degradadas",
     description:
       "Projetos de reflorestamento e técnicas sustentáveis ajudam a recuperar regiões afetadas pela desertificação e erosão do solo",
   },
   {
     id: 4,
-    imageUrl: "/sec4_small2.png?height=600&width=1200",
+    imageUrl: "/carousel_4.png?height=600&width=1200",
     title: "Gestão Hídrica Sustentável",
     description:
       "Estratégias para o uso eficiente da água em regiões áridas, incluindo captação de água da chuva e reuso de águas residuais",
   },
   {
     id: 5,
-    imageUrl: "/sec4_small3.png?height=600&width=1200",
+    imageUrl: "/carousel_5.png?height=600&width=1200",
     title: "Impactos das Mudanças Climáticas",
     description:
       "Estudos sobre como o aquecimento global intensifica os processos de desertificação e afeta ecossistemas vulneráveis",
@@ -590,7 +588,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="min-h-screen bg-gradient-to-b text-white py-12">
+              <div className="bg-gradient-to-b text-white pt-16 pb-32">
                 <div className="container mx-auto px-4"><ImageCarousel slides={slides}></ImageCarousel></div>
               </div>
             </div>
