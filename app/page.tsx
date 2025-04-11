@@ -79,7 +79,7 @@ export default function Home() {
   return (
     <>
       {/* Banner */}
-      <section className="w-full max-w-screen h-screen flex flex-col justify-center items-center text-center overflow-hidden sticky top-0">
+      <section className="w-full max-w-screen h-screen flex flex-col justify-center items-center text-center overflow-hidden sticky top-0 z-0">
         {/* Background Image with scroll-based blur */}
         <div 
           className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden"
@@ -204,7 +204,7 @@ export default function Home() {
         </section>
 
         {/* Segunda Seção */}
-        <div className="flex w-full ">
+        <div className="flex w-full relative z-30">
           <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#271800] bg-[#FCEEE2] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
             Desertificação da Caatinga
           </h2>
@@ -214,7 +214,7 @@ export default function Home() {
             alt="Cacto"
           ></Image>
         </div>
-        <section className="bg-[#FCEEE2] text-black pb-[200px] mb-[-200px]">
+        <section className="bg-[#FCEEE2] text-black pb-[200px] mb-[-200px] relative z-30">
           <div
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-8 bg-[#FCEEE2]"
             style={{ padding: "2rem 2rem" }}
@@ -349,7 +349,7 @@ export default function Home() {
 
         {/* Terceira Seção */}
         {/* Aqui é o banner */}
-        <div className="flex w-full ">
+        <div className="flex w-full relative z-30">
           <h2 className="lg:text-[38px] max-lg:text-[24px] text-[#FFFFFF] bg-[#271800] rounded-tr-[140px] p-10 mt-14 unbounded-regular w-[80%] max-h-[140px]">
             Como os Sistemas Agroflorestais podem salvar a caatinga?
           </h2>
@@ -359,7 +359,7 @@ export default function Home() {
             alt="Cacto"
           ></Image>
         </div>
-        <section className="bg-[#271800] text-white">
+        <section className="bg-[#271800] text-white relative z-30">
           <div
             className="max-w-5xl mx-auto flex flex-col items-center min-h-screen space-y-5 bg-[#271800]"
             style={{ padding: "2rem 2rem" }}
