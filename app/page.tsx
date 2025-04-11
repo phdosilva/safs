@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import bannerImg from "../public/banner.png";
 import videoTemporary from "../public/videoTemporary.png";
@@ -17,6 +19,8 @@ import mineracao from "../public/mineracao.png";
 import PernambucoLoading from "./components/pernambucoLoading";
 import ImageCarousel from "./components/carousel";
 import CarbonSequestrationBreathingComparative from "./components/CarbonSequestrationBreathingComparative";
+
+import { useState, useEffect } from "react";
 
 const slides = [
   {
@@ -57,20 +61,56 @@ const slides = [
 ];
 
 export default function Home() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Calculate blur and opacity based on scroll position
+  const blurAmount = Math.min(scrollY * 0.1, 10);
+  const opacityAmount = Math.max( scrollY * 0.003, 0.4);
+
   return (
     <>
       {/* Banner */}
-      <section className="w-full max-w-screen h-screen flex flex-col justify-center items-center text-center overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
-          <Image src={bannerImg} alt="Desertos na Caatinga" layout="fill" objectFit="cover" objectPosition="center" />
-          {/* Overlay */}
-          <div className="absolute top-0 left-0 w-full h-full bg-black/40" />
+      <section className="w-full max-w-screen h-screen flex flex-col justify-center items-center text-center overflow-hidden sticky top-0">
+        {/* Background Image with scroll-based blur */}
+        <div 
+          className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden"
+          style={{
+            filter: `blur(${blurAmount}px)`,
+            transition: 'filter 0.1s ease-out',
+            transform: `scale(${1 + blurAmount * 0.005})`,
+            transformOrigin: 'center'
+          }}
+        >
+          <Image 
+            src={bannerImg} 
+            alt="Desertos na Caatinga" 
+            layout="fill" 
+            objectFit="cover" 
+            objectPosition="center"
+            className="w-full h-full"
+          />
+          {/* Dynamic Overlay */}
+          <div 
+            className="absolute top-0 left-0 w-full h-full bg-[#271800] transition-opacity duration-100"
+            style={{ opacity: opacityAmount }}
+          />
         </div>
 
-        {/* Text Content */}
-        <div className="z-10 max-w-5xl px-4">
-          <h1 className=" text-white text-3xl md:text-6xl font-bold mb-4 unbounded-bold">
+        {/* Text Content with scroll-based fade */}
+        <div 
+          className="z-10 max-w-5xl px-4 transition-opacity duration-100"
+          style={{ opacity: 1 - scrollY * 0.002 }}
+        >
+          <h1 className="text-white text-3xl md:text-6xl font-bold mb-4 unbounded-bold">
             Desertos na Caatinga:
             <br />
             <span className="text-white text-xl md:text-4xl unbounded-regular">
@@ -80,7 +120,10 @@ export default function Home() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-20 flex flex-col items-center">
+        <div 
+          className="absolute bottom-20 flex flex-col items-center transition-opacity duration-300"
+          style={{ opacity: 1 - scrollY * 0.005 }}
+        >
           <div className="relative">
             <Image src={scrollSVG} alt="Scroll Indicator"></Image>
             <Image
@@ -97,16 +140,16 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#271800] pointer-events-none" />
       </section>
 
-      <main className="">
+      <main className="relative z-10">
         {/* Primeira Seção */}
-        <section className="w-full min-h-screen flex flex-col text-white bg-[#271800] pb-[200px] mb-[-200px]">
+        <section className="w-full min-h-screen flex flex-col text-white bg-[#271800] pb-[200px] mb-[-200px] relative z-20">
           <div className="max-w-5xl mx-auto flex flex-col min-h-screen space-y-8" style={{ padding: "2rem 2rem" }}>
             <div className="md:px-10 space-y-8 poppins-regular">
               <p>
                 Por anos, um bioma representado na grande mídia pela morte e pela seca: a caatinga, que é o único bioma
                 exclusivamente brasileiro, na verdade exala mais vida do que se pode ver a olho nu. As variações de solo
                 se transformam em diferentes tipos de paisagens, como serras, chapadas e afloramento de rochas chamados
-                de ‘‘lajedos’’.
+                de 'lajedos'.
               </p>
               <p>
                 Essa variedade se estende para a fauna e a flora, com cerca de 1.794 espécies de animais vertebrados e
@@ -281,7 +324,7 @@ export default function Home() {
                 da terra, desenvolvendo um sistema de categorias essencial para compreender o avanço da desertificação.
               </p>
               <p>
-                As características dos diferentes tipos de solo, geralmente pedregosos, endurecidos,  argilosos ou
+                As características dos diferentes tipos de solo, geralmente pedregosos, endurecidos, argilosos ou
                 arenosos, todos com baixa fertilidade e pouca capacidade de drenagem, combinados ao desmatamento e
                 práticas agropecuárias inadequadas influenciam muito no processo de degradação. Dados do Instituto
                 Nacional do Semiárido (INSA), revelam que 85% do semiárido brasileiro está em processo de desertificação
@@ -363,16 +406,16 @@ export default function Home() {
                 </div>
               </div>
               <p className="mt-[-18px] max-md:mt-10">
-                “O solo se torna como uma esponja, absorvendo melhor a água e os nutrientes necessários para sobreviver.
-                Onde não há mata, não há água”, afirma a engenheira agrônoma.
+                "O solo se torna como uma esponja, absorvendo melhor a água e os nutrientes necessários para sobreviver.
+                Onde não há mata, não há água", afirma a engenheira agrônoma.
               </p>
               <p>
                 Segundo Rivaneide, os SAFs podem ser implementados mesmo em áreas pequenas, de pelo menos 20 metros
                 quadrados. No entanto, muitos agricultores ainda hesitam em adotar essa prática, seja pela falta de
                 assistência técnica que ofereça o suporte necessário para garantir a segurança alimentar, seja pela
-                incerteza em relação à posse da terra. “Eles têm medo. Se cultivarem em terras de outras pessoas, podem
+                incerteza em relação à posse da terra. "Eles têm medo. Se cultivarem em terras de outras pessoas, podem
                 ser surpreendidos caso o proprietário decida mudar o uso do terreno, como, por exemplo, para pastagem.
-                Todo o trabalho pode ser perdido”, explica.
+                Todo o trabalho pode ser perdido", explica.
               </p>
             </div>
           </div>
@@ -446,8 +489,8 @@ export default function Home() {
                   avô.
                 </p>
                 <p>
-                  “Retirávamos toda a vegetação para plantar cana-de-açúcar. Eu fui educado a plantar monocultivo de
-                  cana, milho, feijão, mandioca — tudo era cultivado separado”, relembra Antônio. A transição para o
+                  "Retirávamos toda a vegetação para plantar cana-de-açúcar. Eu fui educado a plantar monocultivo de
+                  cana, milho, feijão, mandioca — tudo era cultivado separado", relembra Antônio. A transição para o
                   Sistema Agroflorestal não foi fácil: o solo estava degradado e demorou a se recuperar. Mas, com
                   persistência, ele viu sua produção prosperar.
                 </p>
@@ -467,14 +510,14 @@ export default function Home() {
                 </p>
                 <p>
                   Além de melhorar a qualidade de vida da família — permitindo que seus filhos estudem e tenham uma
-                  alimentação mais saudável — a agrofloresta fortaleceu sua missão de vida. “Hoje, eu acredito que tenho
+                  alimentação mais saudável — a agrofloresta fortaleceu sua missão de vida. "Hoje, eu acredito que tenho
                   ainda mais sonhos. Estou velho, careca, cansado, mas o meu sonho é ampliar ainda mais esse trabalho e
-                  contribuir para que outras pessoas também possam aderir”, afirma o agricultor.
+                  contribuir para que outras pessoas também possam aderir", afirma o agricultor.
                 </p>
                 <p>
                   Para Antônio, cada árvore plantada é uma pequena, mas significativa, contribuição para um futuro
-                  melhor: “O que eu faço é muito pouco, mas sigo a lógica de Madre Teresa de Calcutá. Ela diz que o que
-                  fazemos é apenas uma gota de água no oceano, mas sem ela, o oceano seria menor”.
+                  melhor: "O que eu faço é muito pouco, mas sigo a lógica de Madre Teresa de Calcutá. Ela diz que o que
+                  fazemos é apenas uma gota de água no oceano, mas sem ela, o oceano seria menor".
                 </p>
                 <p>
                   Atualmente, sua experiência inspira outros agricultores da região, embora ele reconheça que a adesão
@@ -496,8 +539,8 @@ export default function Home() {
                 />
                 <Image src={brownQuotes} alt="aspas" className="absolute top-6 left-[-30px] w-16 h-16" />
                 <blockquote className="text-[#271800] text-xl pl-10 pr-20 justify-center leading-tight roboto-bold">
-                  “Se houvesse um apoio das ONGs de extensão rural, ou uma política que possibilitasse essa assistência
-                  técnica, acho que poderia avançar.”
+                  "Se houvesse um apoio das ONGs de extensão rural, ou uma política que possibilitasse essa assistência
+                  técnica, acho que poderia avançar."
                 </blockquote>
                 <p className="pl-4 text-[#271800] text-left font-bold">Antônio Sabino</p>
               </div>
@@ -601,16 +644,16 @@ export default function Home() {
                 nas mãos do agronegócio.
               </p>
               <p>
-                “Os agricultores camponeses já têm estratégias estruturadas para conservar a biodiversidade e as
+                "Os agricultores camponeses já têm estratégias estruturadas para conservar a biodiversidade e as
                 condições produtivas. No entanto, os grandes produtores, que detêm as terras mais degradadas, ainda não
-                enxergam a agrofloresta como uma estratégia economicamente vantajosa”, analisa Alexandre.
+                enxergam a agrofloresta como uma estratégia economicamente vantajosa", analisa Alexandre.
               </p>
               <p>
                 Apesar das ações do departamento, existe a dificuldade de ver o impacto na prática. O Ministério do Meio
                 Ambiente já está ciente do problema, mas a efetividade das ações não é experimentada pela população. Um
-                dos principais desafios para a efetivação dessas políticas, segundo Alexandre, é o orçamento. “Podemos
+                dos principais desafios para a efetivação dessas políticas, segundo Alexandre, é o orçamento. "Podemos
                 ter planos, programas e campanhas, mas, sem recursos, corremos o risco de ter bons instrumentos, mas
-                pouca aplicabilidade”, aponta Pires.
+                pouca aplicabilidade", aponta Pires.
               </p>
 
               <div className="flex w-full gap-10 max-sm:flex-col max-sm:items-center">
